@@ -13,18 +13,18 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Install Flutter
-        uses: subosito/flutter-action@v2
-        with:
-          channel: "stable"
-      - run: flutter --version
-
-      - name: Install dependencies
-        run: flutter pub get
+      # - name: Install Flutter
+      #   uses: subosito/flutter-action@v2
+      #   with:
+      #     channel: "stable"
+      # - run: flutter --version
+      #
+      # - name: Install dependencies
+      #   run: flutter pub get
 
       # See stackoverflow.com/questions/74164386/flutter-web-shows-blank-page-on-github-deployment
-      - name: Install and Build
-        run: flutter build web --release --base-href /deriv_widgetbook/
+      # - name: Install and Build
+      #   run: flutter build web --release --base-href /deriv_widgetbook/
 
       - name: Deploy to Github Pages
         uses: JamesIves/github-pages-deploy-action@v4
