@@ -14,7 +14,7 @@ Widget fullScreenMessageUseCase(BuildContext context) => FullscreenMessage(
         initialValue: 'Title',
       ),
       iconData: CustomIconData(
-        icon: '/icons/ic_no_connection.svg',
+        icon: 'assets/icons/ic_no_connection.svg',
       ),
       description: context.knobs.string(
         label: 'Description',
@@ -37,7 +37,7 @@ Widget fullScreenMessageWithButtonUseCase(BuildContext context) =>
         initialValue: 'This is the default content.',
       ),
       iconData: CustomIconData(
-        icon: '/icons/ic_no_connection.svg',
+        icon: 'assets/icons/ic_no_connection.svg',
       ),
       actionLabel: context.knobs.string(
         label: 'Action Label',
